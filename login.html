@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Authorization</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <a href="index.html">
+      <div class="back" id="cross">
+
+        <i class="fa fa-times" aria-hidden="true"></i></div
+    >
+    
+</a>
+    <hr />
+    <div class="main">
+      
+      <div class="email">
+        <form action="" id="login">
+          <h2>Sign in</h2>
+          <div class="mail">
+            <input type="email" id="email" class="inputText" required />
+            <span class="floating-label">Email address</span>
+          </div>
+          <div class="mail">
+            <input
+              type="password"
+              id="password"
+              class="inputText"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+            <i class="fa fa-eye" id="togglePassword"></i><br />
+            <span class="floating-label">Password</span>
+          </div>
+          <p id="keep">
+            <input type="checkbox" id="checkbox" /><label
+              for="checkbox"
+              id="keepid"
+              >Keep me signed in</label
+            ><a href="forgotpassword.html"
+              ><span id="pw">Forgot password?</span></a
+            >
+          </p>
+          <p>
+            By signing in, I agree to the Orbitz
+            <a href=""><span> Terms and Conditions, Privacy Statement</span></a
+            >
+            and
+            <a href=""><span> Orbitz Rewards Terms and Conditions.</span></a
+                >
+          </p>
+          <input type="submit" value="Sign In" id="create" />
+          <p style="text-align: center; margin-bottom: 25px; margin-top: 20px;">
+            Not a member?<a href="signin.html"
+              ><span>Create an account</span></a
+            >
+          </p>
+          <p style="text-align: center;">or continue with</p>
+    
+          <div class="facebook">
+           
+            <div class="apple" id="app">
+              <img src="https://raw.githubusercontent.com/nrjrwt0/Orbitz-clone/main/images/applelogo.jpg" alt="img" />
+              
+            </div>
+    
+            <div class="face" id="face">
+              <img src="https://raw.githubusercontent.com/nrjrwt0/Orbitz-clone/main/images/fb.png" alt="img" />
+              
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
