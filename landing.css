@@ -1,0 +1,1020 @@
+html {
+    scroll-behavior: smooth;
+  }
+  #bookingDiv {
+    height: 420px;
+    
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #bookingDiv > #bookingBox {
+    width: 89%;
+    max-width: 1200px;
+     height: 84%;
+    background-color: white;
+    margin-top: 30px;
+  }
+  #bookingBox > ul {
+    /* border: 1px solid red; */
+    border-bottom: 1px solid #999999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 80px;
+    padding: 0px 50px;
+    margin-top: 10px;
+  }
+  #bookingBox > ul > li {
+    cursor: pointer;
+    list-style: none;
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 17px 0px;
+    /* border: 1px solid red; */
+  }
+  #bookingBox > ul > li > i {
+    margin-bottom: 14px;
+  }
+  #bookingBox > ul > li > p {
+    font-size: 16px;
+  }
+  #bookingBox > ul > .currentBooking {
+    color: #01a4bb;
+    border-bottom: 3px solid #01a4bb;
+  }
+  
+  .bookingDetailShow {
+    display: none;
+  }
+  .displayDetails {
+    display: block;
+  }
+  
+  .booking {
+    /* border: 1px solid #01a4bb; */
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bookingButtons {
+    margin: 20px 0px;
+    margin-left: 40px;
+  }
+  .bookingButtons > button {
+    padding: 13px 28px;
+    margin-right: 12px;
+    font-size: 14px;
+    background-color: white;
+    color: #999999;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+  }
+  .bookingButtons > .activeBtn {
+    background-color: #017f8f;
+    color: white;
+  }
+  .bookingButtons > button:hover {
+    background-color: #017f8f;
+    color: white;
+  }
+  .bookingButtons > p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #999999;
+  }
+  .bookingButtons > p ~ button {
+    padding: 8px 20px;
+    border-radius: 20px;
+  }
+  .bookingButtons > p + button:hover {
+    background-color: #017f8f;
+    color: white;
+  }
+  .bookingDetailsBtn {
+    padding: 5px 16px;
+    /* height: 40px; */
+    border: 1px solid #999999;
+    margin: 0px 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .bookingDetailsBtn > div:first-child {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .bookingDetailsBtn > div > i {
+    color: #616161;
+    margin-right: 12px;
+  }
+  .bookingDetailsBtn > div > span {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .bookingDetailsBtn > div > span > span:first-child {
+    font-size: 14px;
+    margin: 1px 0px;
+    color: #999999;
+  }
+  .searchBtn {
+    /* width: 39%; */
+    flex: 4;
+    position: relative;
+  }
+  .clickToSearchLocation {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    /* text-align: left; */
+  }
+  .checkInBtn {
+    flex: 1;
+    position: relative;
+  }
+  
+  .checkOutBtn {
+    flex: 1;
+    /* position: relative; */
+  }
+  .travellersBtn {
+    flex: 2;
+    position: relative;
+  }
+  .checkboxAndBtn {
+    padding: 20px 40px;
+    /* border: 1px solid red; */
+  }
+  .checkboxAndBtn > div:first-child {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+  }
+  .checkboxAndBtn > div:first-child > input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #999999;
+  }
+  .checkboxAndBtn > div:first-child > label {
+    margin-right: 40px;
+    font-size: 16px;
+    color: #999999;
+  }
+  .checkboxAndBtn > div:nth-child(2) {
+    width: 180px;
+    margin: 30px auto 30px;
+    /* border: 1px solid red; */
+  }
+  .checkboxAndBtn button {
+    padding: 14px 67px;
+    outline: none;
+    border: none;
+    background-color: rgb(207, 75, 110);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .checkboxAndBtn button:hover {
+    opacity: 0.9;
+  }
+  .searchLocationDiv {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    /* padding: 10px 25px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 10px;
+    z-index: 10;
+  }
+  .searchLocationDiv > input {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #999999;
+    outline: none;
+  }
+  .searchDateDiv {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 700px;
+    height: 470px;
+    /* padding: 10px 25px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 10px;
+    z-index: 10;
+  }
+  .travellersDetailDiv {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 360px;
+    height: 320px;
+    padding: 20px 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 10px;
+    font-size: 16px;
+    z-index: 10;
+  }
+  .travellersDetailDiv > h3 {
+    margin-bottom: 18px;
+  }
+  .travellersDetailDiv > p:nth-child(2) {
+    font-size: 18px;
+  }
+  .travellersDetailDiv > div > div {
+    color: #999999;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .travellersDetailDiv > div > div > div > a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 12px;
+  }
+  .mathsign {
+    border: 2px solid black;
+    padding: 1px 7px;
+    border-radius: 50%;
+  }
+  .mathsign + span {
+    margin: 0px 6px;
+    color: black;
+  }
+  .travellersDetailDiv > p:nth-child(4) {
+    text-align: right;
+    font-size: 18px;
+    color: #01a4bb;
+  }
+  .travellersDetailDiv > button {
+    width: 100%;
+    padding: 14px 67px;
+    outline: none;
+    border: none;
+    background-color: rgb(207, 75, 110);
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .travellersDetailDiv button:hover {
+    opacity: 0.9;
+  }
+  #help {
+    width: 90px;
+    padding: 8px 16px;
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 16px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: #01a4bb;
+    box-shadow: 0px 0px 10px;
+    cursor: pointer;
+    background-color: white;
+    z-index: 100;
+  }
+  #help > img {
+    max-width: 30%;
+    margin-right: 10px;
+  }
+  #help > i {
+    margin-right: 10px;
+  }
+  
+  #adsInPage {
+    background-color: #e6e6e6;
+  }
+  
+  #adsInPageAds {
+    /* border: 1px solid red; */
+    width: 88%;
+    margin: auto;
+    padding: 60px 10px;
+  }
+  #adsInPageAds > h1 {
+    margin-left: 12px;
+    font-size: 28px;
+  }
+  .box1sDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    /* border: 1px solid red; */
+  }
+  
+  .box1 {
+    background-image: linear-gradient(white 72%, #999999);
+    margin: 0px 14px;
+    padding: 40px 20px;
+    height: 160px;
+    flex: 1;
+    display: flex;
+  }
+  
+  .box1Images {
+    /* border: 1px solid red; */
+    flex: 1.5;
+    border-radius: 20%;
+    margin-right: 6px;
+    margin-top: -8px;
+    overflow: hidden;
+  }
+  .bookMore > img {
+    /* border: 1px solid red; */
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .box1Images > img {
+    max-width: 100%;
+  }
+  .box1Info {
+    flex: 4;
+  }
+  .box1Info > h4 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .box1Info > p {
+    color: #999999;
+  }
+  
+  /* .box2sDiv {
+  } */
+  
+  /* Footer */
+  /* * {
+    margin: 0px;
+    padding: 0px; */
+  /* box-sizing: border-box; */
+  /* } */
+  .back {
+    /* height: 1994.6px;
+    width: 1494.44px; */
+    /* max-width: 1440px; */
+    /* background-color: #FFFFFF; */
+  
+    background-color: #e6e6e6;
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  .flex {
+    /* border: 1px solid red; */
+    min-width: 86%;
+    /* height: 1625.42px;
+    width: 935.99px; */
+    /* max-width: 936px; */
+    padding: 0 9px 0 9px;
+    justify-content: space-around;
+    /* margin: 0 280px 0 280px; */
+  }
+  .vacation {
+    /* border: 1px solid red; */
+    margin-left: 12px;
+    margin-bottom: 8px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .vacbox {
+    /* border: 1px solid red; */
+    min-width: 100%;
+    height: 271.806px;
+    width: 918.003px;
+    padding: 9px 0px 50px 0;
+    margin-bottom: 50px;
+  }
+  .picts {
+    cursor: pointer;
+    float: left;
+    height: 212.5px;
+    width: 232.5px;
+    /* border: 2px solid red; */
+    margin: 12px 7px 0px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    /* text-decoration: underline solid rgb(0,126,143); */
+    line-height: 15.4286px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .one {
+    background: url('../images/animal.png');
+    background-size: cover;
+  }
+  .two {
+    background: url('../images/incl.png');
+    background-size: cover;
+  }
+  .three {
+    background: url('../images/lux.png');
+    background-size: cover;
+  }
+  .four {
+    background: url('../images/min.png');
+    background-size: cover;
+  }
+  .five {
+    background: url('https://www.tripsavvy.com/thmb/FwmQ-JvBEBDDlVb-j_zdEo0iVsA=/2048x1152/smart/filters:no_upscale()/beach-5b59c9b7c9e77c004b3e0ff0.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+  }
+  .pico {
+    /* border: 1px solid red; */
+    height: 300px;
+    min-width: 100%;
+    padding: 9px 9px 18px 10px;
+    /* max-width: 936px; */
+    margin-bottom: 19px;
+  }
+  .mob {
+    float: left;
+    height: 300px;
+    width: 30%;
+    background: url('../images/mob.png');
+  }
+  .content {
+    float: left;
+    width: 70%;
+    height: 300px;
+    background-color: white;
+    padding-left: 60px;
+    padding-top: 10px;
+    /* background: url('content.png'); */
+  }
+  .info {
+    float: left;
+    /* border: 1px solid red; */
+    width: 417.378px;
+    height: 250px;
+    padding-left: 5px;
+  }
+  .rewards {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 46.667px;
+    width: 417.378px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+  }
+  .sline {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 22px;
+    margin-left: 18px;
+    font-size: 12px;
+    line-height: 13.5px;
+  }
+  .sline > ul > li {
+    margin-bottom: 10px;
+  }
+  .text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 16.5px;
+    height: 15.5356px;
+    width: 417.378px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+  }
+  .floating {
+    float: left;
+    width: 135.122px;
+    height: 35.9896px;
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  .enter {
+    height: 35px;
+    width: 134px;
+  }
+  .get {
+    cursor: pointer;
+    margin-right: 0;
+    background-color: #eb3966;
+    border: none;
+    outline: none;
+    width: 126px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .lawo {
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    font-size: 9px;
+    width: 417.378px;
+    height: 22.2222px;
+    line-height: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .qr {
+    float: right;
+    margin-right: 100px;
+    margin-top: 16px;
+    /* border: 1px solid red; */
+  }
+  .qrimg {
+    background: url('../images/QR.jpg');
+    width: 160px;
+    height: 160px;
+    margin-left: 40px;
+  }
+  .scan {
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 127.135px;
+    font-size: 10.5px;
+    font-weight: 700;
+    line-height: 13.5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .more {
+    /* width: 918.003px; */
+    min-width: 100%;
+    height: 300.181px;
+    padding: 40px 0 9px 0;
+    max-width: 936px;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+  .heading {
+    /* width: 918.0038px; */
+    /* height: 23.333px; */
+    /* border: 1px solid red; */
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .sep {
+    cursor: pointer;
+    height: 46.9722px;
+    width: 302px;
+    background-color: white;
+    float: left;
+    margin-right: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 9px;
+    line-height: 16.5px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .foot {
+    color: #999999;
+    height: 270px;
+    min-width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 10px auto;
+    /* padding-left: 50px; */
+  }
+  .enlist > ul {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .enlist > ul > li {
+    display: inline;
+    margin: 0px 4px;
+    font-size: 14px;
+    line-height: 12px;
+    cursor: pointer;
+  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .enlist > ul > li:hover {
+    text-decoration: underline solid rgb(0, 126, 143);
+    color: rgb(0, 126, 143);
+    cursor: pointer;
+  }
+  .sell {
+    height: 28.9965px;
+    width: 260px;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .sell:hover {
+    cursor: pointer;
+    text-decoration: underline solid rgb(0, 126, 143);
+    color: rgb(0, 126, 143);
+  }
+  .copyright {
+    height: 110px;
+    width: 800.017px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rate {
+    cursor: default;
+    height: 44.444px;
+    width: 360px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .expedia {
+    cursor: pointer;
+    margin: auto;
+    width: 150px;
+    height: 80px;
+    padding: 20px;
+  }
+  
+  /* Mid boxes  */
+  #for_background {
+    background-color: #e6e6e6;
+  }
+  #main_box {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+  }
+  #box_1 {
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* margin-left: 4%; */
+  }
+  #whats_new {
+    /* margin-left: 12%; */
+    padding-left: 6px;
+    margin-bottom: 10px;
+  }
+  #first_div {
+    width: 100%;
+    height: 250px;
+    /* margin-left: 12%; */
+  }
+  .first_div_image {
+    width: 100%;
+    height: 250px;
+  }
+  .classh3 {
+    padding: 10px;
+  }
+  .classp1 {
+    padding: 10px;
+    color: rgb(78, 71, 71);
+  }
+  #second_div {
+    width: 100%;
+    /* margin-left: 12%; */
+    background-color: white;
+    height: 100px;
+  }
+  #box_2 {
+    width: 39%;
+    /* border: 1px solid green; */
+  }
+  .class_discription {
+    /* border: 1px solid red; */
+  
+    padding: 35px;
+  }
+  #small_box1 {
+    /* border: 1px solid red; */
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    margin-top: 46px;
+    display: flex;
+  }
+  
+  #small_box2 {
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    margin-top: 10px;
+    display: flex;
+  }
+  /* .classgrey_col { */
+  /* color: rgb(100, 98, 98); */
+  /* } */
+  
+  #large {
+    /* margin-left: 150px; */
+    width: 100%;
+    height: 250px;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  #large div {
+    margin-left: 2%;
+    color: white;
+  }
+  #featured {
+    width: 86%;
+    margin: 0px auto 60px;
+    padding: 0 9px 0 9px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .f_class {
+    margin-top: 5%;
+    margin-bottom: 14px;
+  
+    /* border: 1px solid red; */
+  
+    /* margin-left: 150px; */
+  }
+  #main_travel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    padding-bottom: 20px;
+    /* border: 1px solid red; */
+  }
+  #travel_tips {
+    display: flex;
+    width: 86%;
+    margin: auto;
+    gap: 12px;
+  }
+  .travel_h1 {
+    width: 86%;
+    margin: 14px auto;
+  
+    /* border: 1px solid red; */
+  }
+  #glamping_spots {
+    width: 396px;
+    height: 200px;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/glamping2.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: whitesmoke;
+    opacity: 0.8;
+  }
+  #airstream {
+    width: 396px;
+    height: 200px;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/airstream.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    opacity: 0.8;
+  }
+  #road_9 {
+    width: 396px;
+    height: 200px;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/20/roadtripapp.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    opacity: 0.8;
+  }
+  #glamp {
+    display: flex;
+    flex-direction: column;
+  }
+  #air {
+    display: flex;
+    flex-direction: column;
+  }
+  #road {
+    display: flex;
+    flex-direction: column;
+  }
+  .discription_small {
+    background-color: white;
+    width: 400px;
+  }
+  .discription_small > p {
+    padding: 5px;
+    margin: 10px;
+    color: #999999;
+  }
+  #glamping_spots > h2 {
+    /* border: 1px solid red; */
+    font-size: 22px;
+    margin: 5px;
+  }
+  #airstream > h2 {
+    margin: 5px;
+  }
+  #road_9 > h2 {
+    margin: 5px;
+  }
+  
+  /* chatbot */
+  #main_div {
+    display: none;
+    background-color: whitesmoke;
+    height: 650px;
+    width: 25%;
+    border-radius: 15px;
+    position: fixed;
+    top: 70px;
+    right: 36px;
+    z-index: 120;
+    box-shadow: 0px 0px 10px;
+  }
+  #how_para {
+    display: flex;
+    height: 42px;
+    background-color: #01b1ff;
+    justify-content: space-between;
+    border-radius: 3px;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .button_x {
+    margin-top: -8px;
+  }
+  .button_x1 {
+    height: 25px;
+    width: 25px;
+    margin-top: 4px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  #para_chat {
+    text-align: center;
+    margin-top: 13px;
+    margin-right: 20px;
+  }
+  
+  #logo2 {
+    text-align: center;
+    margin: 30px 0px 10px;
+  }
+  #logo_para {
+    text-align: center;
+    margin-bottom: 14px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+  }
+  #chat_start {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  #chat_start img {
+    margin: 10px 4px;
+  }
+  .para_chat {
+    height: 45px;
+    background-color: #999999;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    /* color: ; */
+  }
+  #chat_start2 {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #chat_start2 img {
+    margin: 15px 4px;
+  }
+  .para_chat {
+    height: 45px;
+    background-color: rgb(214, 213, 213);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px 10px;
+  }
+  .para_chat1 {
+    height: 65px;
+    background-color: rgb(214, 213, 213);
+    max-width: 96%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 6px 8px;
+  }
+  #button_section {
+    margin-top: 150px;
+  }
+  #down_btn {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #first_btn {
+    margin-left: 10px;
+  }
+  .button_class {
+    /* height: 40px; */
+    /* width: 110px; */
+    margin-right: 8px;
+    padding: 1px 10px;
+    color: #01b1ff;
+    border-radius: 25px;
+    border-color: #01b1ff;
+    margin-bottom: 4px;
+  }
+  .button_class:hover {
+    background-color: #01b1ff;
+    color: white;
+  }
+  .button_class1 {
+    /* height: 40px;
+    width: 150px; */
+    padding: 8px 14px;
+    color: #01b1ff;
+    margin-left: 12px;
+    border-radius: 25px;
+    border-color: #01b1ff;
+  }
+  .button_class1:hover {
+    background-color: #01b1ff;
+    color: white;
+  }
+  #last_line {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  .input_box {
+    height: 40px;
+    padding: 10px;
+    width: 270px;
+    border-color: rgb(182, 179, 179);
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .icon_place {
+    margin-top: 5px;
+  }
