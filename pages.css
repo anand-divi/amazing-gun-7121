@@ -1,0 +1,235 @@
+body {
+    background-color: lightgray;
+  }
+  
+  
+  
+  .map-generator {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .first {
+    padding-left: 5%;
+    width: 80%;
+  }
+  .pagesBooking {
+    /* border: 1px solid red; */
+    padding: 0px 30px;
+    max-height: 160px;
+  }
+  .bookingDetailsBtn {
+    background-color: white;
+    height: 50px;
+  }
+  .searchBtn {
+    flex: 3;
+    /* position: relative; */
+  }
+  .clickToSearchLocation {
+    width: 100%;
+    height: 100%;
+  }
+  .checkInBtn {
+    flex: 2;
+    position: relative;
+  }
+  
+  .checkOutBtn {
+    flex: 1;
+  }
+  
+  .travellersBtn {
+    flex: 1;
+  }
+  .checkboxAndBtn button {
+    margin-top: -20px;
+  }
+  .seperate {
+    /* position: relative; */
+    display: flex;
+    /* top: 100px; */
+    /* border: 1px solid red; */
+  }
+  
+  .function,
+  .list {
+    /* border: 1px solid red; */
+    height: 40px;
+    margin-right: 5%;
+  }
+  .main {
+    /* border: 1px solid blue; */
+  
+    width: 95%;
+    display: flex;
+    position: relative;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .hotels {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 30px 10px;
+    cursor: pointer;
+  }
+  /* filter start */
+  .filter {
+    width: 30%;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+  }
+  .filter h3 {
+    /* border: 1px solid red; */
+    padding: 20px 0px;
+    margin-bottom: 10px;
+  }
+  .filter h4 {
+    margin-bottom: 10px;
+    color: #999999;
+  }
+  .filter > button {
+    width: 40px;
+    height: 40px;
+    margin: 2px 1px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  .filter > button:hover {
+    background-color: #007e8f;
+    color: white;
+  }
+  .filter > button > i {
+    color: rgb(65, 65, 65);
+  }
+  .filter > div {
+    margin-top: 80px;
+  }
+  
+  .budget {
+    width: 17px;
+    height: 17px;
+    margin: 10px 0px;
+  }
+  .list > .datalist {
+    width: 250px;
+    position: relative;
+    left: 730px;
+    bottom: 14px;
+    /* border: 1px solid yellowgreen; */
+  }
+  
+  .list > .datalist > select {
+    height: 45px;
+    width: 250px;
+    padding-top: 20px;
+    font-size: 16px;
+    /* border: 1px solid yellowgreen; */
+    outline: none;
+  }
+  
+  .list > .datalist > select:hover,
+  .list > .datalist > select:focus {
+    border: 2px solid #007e8f;
+  }
+  .list > .datalist > span {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    color: rgb(65, 65, 65);
+  }
+  .list > a > h4 {
+    position: absolute;
+    color: black;
+    /* border: 2px solid red; */
+    top: 200px;
+    left: 330px;
+    font-size: 13px;
+  }
+  .list > #map {
+    position: relative;
+    width: 230px;
+    height: 170px;
+    bottom: 100px;
+    left: 0px;
+  }
+  /* filter end */
+  .ads {
+    width: 15%;
+    height: 850px;
+    margin-right: 20px;
+  }
+  .hotel {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 170px;
+    background-color: white;
+    margin: 16px 0px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  img:hover {
+    transform: scale(0.96);
+  }
+  .detail {
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+  .img {
+    width: 30%;
+  }
+  .detail > h3,
+  .detail > h3 + p {
+    margin: 2px;
+  }
+  .detail > h3 + p {
+    color: #999999;
+  }
+  .free {
+    margin-top: 28px;
+    font-size: 13px;
+    color: green;
+  }
+  .rating {
+    font-weight: bold;
+  }
+  .price {
+    position: absolute;
+    right: 28px;
+    top: 30px;
+    height: 80%;
+    width: 25%;
+  }
+  .lable {
+    margin-bottom: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(81, 196, 242);
+    color: rgb(3, 3, 24);
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .price > h3 {
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .price > p {
+    margin: 2px;
+    text-align: right;
+    font-size: smaller;
+    color: gray;
+  }
+  
+  #property {
+    padding: 10px;
+    width: 90%;
+    height: 35px;
+    margin-bottom: 12px;
+    outline: none;
+  }
