@@ -434,26 +434,29 @@ html {
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .one {
-    background: url('../images/animal.png');
+    background: url('https://www.shutterstock.com/image-photo/group-playful-pedigreed-golden-retriever-260nw-1400206643.jpg');
     background-size: cover;
   }
   .two {
-    background: url('../images/incl.png');
+    background: url('https://raw.githubusercontent.com/nrjrwt0/Orbitz-clone/main/images/incl.png');
     background-size: cover;
+    opacity: 2;
   }
   .three {
-    background: url('../images/lux.png');
+    background: url('https://raw.githubusercontent.com/nrjrwt0/Orbitz-clone/main/images/lux.png');
     background-size: cover;
+    opacity: 20;
+
   }
   .four {
-    background: url('../images/min.png');
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Big_Ben_Closeup.jpg/1200px-Big_Ben_Closeup.jpg');
     background-size: cover;
   }
   .five {
     background: url('https://www.tripsavvy.com/thmb/FwmQ-JvBEBDDlVb-j_zdEo0iVsA=/2048x1152/smart/filters:no_upscale()/beach-5b59c9b7c9e77c004b3e0ff0.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.9;
   }
   .pico {
     /* border: 1px solid red; */
@@ -743,7 +746,7 @@ html {
     background-color: white;
     width: 100%;
     height: 170px;
-    margin-top: 46px;
+    margin-top: 30px;
     display: flex;
   }
   
